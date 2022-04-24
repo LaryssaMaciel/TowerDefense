@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject[] targets;
+    public GameObject target;
+    public int num = 0, speed = 3, totalTargets = 3; // numero do target
+    public GameObject caminho;
+    
     void Start()
     {
-        
+        targets = GameObject.FindGameObjectsWithTag("target");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        target = targets[num];
+        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, Time.deltaTime * speed);
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -21,6 +25,11 @@ public class Inimigo : MonoBehaviour
         if (col.gameObject.tag == "tiro")
         {
             Destroy(col.gameObject);
+        }
+
+        if (col.gameObject.tag == "target")
+        {
+            num++;
         }
     }
 }
