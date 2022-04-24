@@ -7,6 +7,10 @@ TagManager:
   - Tower
   - Inimigo
   - tiro
+  - target
+  - target1
+  - c1
+  - c0
   layers:
   - Default
   - TransparentFX

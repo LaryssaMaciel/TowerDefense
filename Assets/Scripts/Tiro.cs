@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tiro : MonoBehaviour
 {
-    public float movSpeed = 5f, ataqueValor = 10, timeBtwAttack, startTimeBtwAttack = .3f;
+    public float movSpeed = 5f, ataqueValor = 10, timeBtwAttack, startTimeBtwAttack = .15f;
     public GameObject prefabTiro;
     public bool canAttack; 
     GameObject obj_;
