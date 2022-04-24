@@ -215,6 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 758653737}
+  - component: {fileID: 758653738}
   m_Layer: 0
   m_Name: Atirar
   m_TagString: Untagged
@@ -236,6 +237,31 @@ Transform:
   m_Father: {fileID: 773098924}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &758653738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758653736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a949a75f16618458930c24f4cf8311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {fileID: 0}
+  attackPos: {fileID: 758653737}
+  movSpeed: 20
+  attackRange: 5
+  ataqueValor: 10
+  timeBtwAttack: 0
+  startTimeBtwAttack: 0.3
+  prefabTiro: {fileID: 2988256591179356125, guid: 0335886ce6b41de4abf9eafa2db5461c, type: 3}
+  target: {fileID: 0}
+  enemiesLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  canAttack: 0
 --- !u!1 &773098922
 GameObject:
   m_ObjectHideFlags: 0
